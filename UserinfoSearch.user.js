@@ -52,7 +52,7 @@ function displayNames() {
     $("#autocompleteChoices").css("align-items","flex-end");
 }
 
-var version = 0.01;
+var version = 0.1;
 var request = new XMLHttpRequest();
 request.onreadystatechange = function() {
     if (request.readyState == XMLHttpRequest.DONE) {
