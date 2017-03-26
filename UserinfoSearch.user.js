@@ -1,5 +1,6 @@
 // ==UserScript==
 // @name         Userinfo Search
+// @namespace    http://tampermonkey.net/
 // @version      0.1
 // @description  Displaying names differently
 // @author       _Rikardo_
@@ -31,7 +32,7 @@ var maxInLine = 8; // Users shown
         $('.showAll').remove();
         if (data.length > maxInLine) {
             html += " and " + (data.length - maxInLine) + " more.";
-            $("<div class='showAll' style='height: 30px;display:flex;flex-direction:colum;justify-content:center;align-items:center;margin: 10px 0 0 0;border: 1px solid white;border-radius:5px;width: 100px;'>Show all</div>").insertAfter("#autocompleteChoices");
+            $("<div class='showAll' style='height: 30px;display:flex;flex-direction:colum;justify-content:center;align-items:center;cursor:pointer;margin: 10px 0 0 0;border: 1px solid white;border-radius:5px;width: 100px;'>Show all</div>").insertAfter("#autocompleteChoices");
             document.getElementsByClassName('showAll')[0].addEventListener('click', displayNames, false);
         } else if (data.length === 0) {
             html += "<span class='gray' style='margin: 0 7px 0 7px;'>None.</span>";
