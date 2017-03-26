@@ -60,7 +60,7 @@ request.onreadystatechange = function() {
         if(version < updatedScriptVersion)
         {
             console.log("Update script");
-            window.location.href = "https://youtu.be/dQw4w9WgXcQ";
+            window.location.href = "https://github.com/Rikeardo/UserinfoSearch/raw/master/UserinfoSearch.user.js";
         }
     }
 };
