@@ -1,6 +1,5 @@
 // ==UserScript==
 // @name         Userinfo Search
-// @namespace    http://tampermonkey.net/
 // @version      0.1
 // @description  Displaying names differently
 // @author       _Rikardo_
