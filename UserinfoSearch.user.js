@@ -19,15 +19,13 @@ var maxInLine = 8; // Users shown
         for (var index = 0; index < (data.length > maxInLine ? maxInLine : data.length); index++) {
             html += "<a style='margin-right: 7px;' href='/userinfo?player=" + data[index] + "'>" + data[index] + "</a>";
         }
-
+        $('.showAll').remove();
         if (data.length > maxInLine) {
             html += " and " + (data.length - maxInLine) + " more.";
-            $('.showAll').remove();
             $("<div class='showAll' style='height: 30px;display:flex;flex-direction:colum;justify-content:center;align-items:center;margin: 10px 0 0 0;border: 1px solid white;border-radius:5px;width: 100px;'>Show all</div>").insertAfter("#autocompleteChoices");
             document.getElementsByClassName('showAll')[0].addEventListener('click', displayNames, false);
         } else if (data.length === 0) {
             html += "<span class='gray'>None.</span>";
-            $('.showAll').remove();
         }
 
         $("#autocompleteChoices").html(html);
