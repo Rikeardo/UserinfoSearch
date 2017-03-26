@@ -1,4 +1,3 @@
-
 // ==UserScript==
 // @name         Userinfo Search
 // @namespace    http://tampermonkey.net/
@@ -10,3 +9,4 @@
 // @include     https://goliath.hypixel.net/userinfo#*
 // @require      https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js
 // ==/UserScript==
+var names = [];
